@@ -21,7 +21,7 @@ try {
     echo "<td class='label'>".$columns[$i]."</td>";
   }
   echo "</tr>";
-  foreach ($sql->query('select * from mybooks') as $row) {
+  foreach ($sql->query("select * from {$sqlConfig->getTablename()}") as $row) {
     echo "<tr>";
     for($i=0;$i<8;$i++){
       echo "<td>".$row[$columns[$i]]."</td>";
