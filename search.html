@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>蔵書検索</title>
+ <meta name="description" content="サイトキャプションを入力">
+ <meta name="keywords" content="サイトキーワードを,で区切って入力">
+ <!--link rel="stylesheet" href="index.css"-->
+ <script src="sample.js"></script>
+ </head>
+
+ <body>
+ <!----- ヘッダー ----->
+ <header>
+   <h1>蔵書検索</h1>
+ </header>
+ <!-- <nav>ナビ</nav> -->
+ <!----- ヘッダー END ----->
+ <!----- メインコンテンツ ----->
+ <main>
+   <form action="search.php" method="post">
+     <h3>タイトルから検索</h3>
+     <input class="query" type="text" name="keyword"><br>
+     <input class="submit" name="qTitle" type="submit" value="検索">
+   </form>
+   <form action="search.php" method="post">
+     <h3>著者から検索</h3>
+     <input class="query" type="text" name="keyword"><br>
+     <input class="submit" name="qAuthor" type="submit" value="検索">
+   </form>
+ </main>
+ <!----- メインコンテンツ END ----->
+
+ <!----- フッター ----->
+ <footer>
+   <a href="show.php">SHOW TABLE</a>
+ </footer>
+ <!----- フッター END ----->
+ </body>
+</html>
