@@ -7,7 +7,7 @@
   <meta name="keywords" content="サイトキーワードを,で区切って入力">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
-<a href="index.php">ISBN入力へ</a><br>
+<a href="isbnSearch.php">ISBNから書籍を追加</a><br>
 <?php
 #require_once('connectSQL.php');
 require_once('connectSQL.php');

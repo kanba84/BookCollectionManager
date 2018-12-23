@@ -69,5 +69,5 @@ if(isset($_POST['openbd'])){
 echo "<br><input type='submit' value='INSERT RECORD'>";
 echo "</form>";
 #echo "<br><a href='getBookInfo.html'>ISBN入力</a>";
-echo "<br><a href='index.php'>ISBN入力</a>";
+echo "<br><a href='isbnSearch.php'>ISBNから書籍を追加</a>";
  ?>

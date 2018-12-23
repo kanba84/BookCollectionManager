@@ -14,4 +14,4 @@ try {
 }
 ?>
 <br><a href="show.php">SHOW TABLE</a>
-<br><a href="index.html">ISBN入力へ</a>
+<br><a href="isbnSearch.php">ISBNから書籍を追加</a>
