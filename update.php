@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/info.css">
 <?php
 require_once('connectSQL.php');
 if(!empty($_POST)){
@@ -20,4 +21,8 @@ if(!empty($_POST)){
   }
 }
  ?>
- <a href='show.php'>蔵書一覧</a><br><a href='search.html'>蔵書検索</a>
+ <ul>
+   <li><a href='index.html'>書籍管理ホーム</a></li>
+   <li><a href='show.php'>蔵書一覧</a></li>
+   <li><a href='search.html'>蔵書検索</a></li>
+ </ul>

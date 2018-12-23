@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <div class="navi">
-  <a href="index.php">ISBN入力へ</a>
+  <a href="index.html">書籍管理ホーム</a>
+  <a href="isbnSearch.php">書籍追加</a>
   <a href="search.html">蔵書検索へ</a>
 <?php
 require_once('connectSQL.php');

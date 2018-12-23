@@ -44,3 +44,10 @@ if(!empty($_POST)){
   echo "<h3>Empty!</h3>";
 }
  ?>
+ <footer>
+   <ul>
+     <li><a href='index.html'>書籍管理ホーム</a></li>
+     <li><a href='show.php'>蔵書一覧</a></li>
+     <li><a href='search.html'>蔵書検索</a></li>
+   </ul>
+ </footer>

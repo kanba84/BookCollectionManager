@@ -13,7 +13,7 @@ $isbn = getISBN();
 <html lang="ja">
  <head>
  <meta charset="utf-8">
- <title>書籍検索</title>
+ <title>書籍追加</title>
  <meta name="description" content="サイトキャプションを入力">
  <meta name="keywords" content="サイトキーワードを,で区切って入力">
  <link rel="stylesheet" href="index.css">
@@ -27,7 +27,7 @@ $isbn = getISBN();
  <body>
  <!----- ヘッダー ----->
  <header>
-   <h1>書籍検索</h1>
+   <h1>書籍を追加</h1>
    <h2>ISBNコードから書籍を検索</h2>
  </header>
  <!-- <nav>ナビ</nav> -->
@@ -52,6 +52,7 @@ $isbn = getISBN();
 
  <!----- フッター ----->
  <footer>
+   <a href="index.html">書籍管理ホーム</a><br>
    <a href="show.php">蔵書一覧</a><br>
    <a href="search.html">蔵書検索</a>
  </footer>

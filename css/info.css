@@ -1,3 +1,24 @@
 span {
   color:red;
 }
+ul {
+  list-style: none;
+  float: left;
+  padding-left:0px;
+}
+li {
+  margin-right:20px;
+  float:left;
+}
+input {
+  height:40px;
+  width:40px;
+  font-size:16px;
+}
+select {
+  heght:22px;
+  width:120px;
+  font-size:16px;
+  border:solid 1px black;
+  margin-right:5px;
+}
