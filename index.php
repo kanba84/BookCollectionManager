@@ -52,7 +52,7 @@ $isbn = getISBN();
 
  <!----- フッター ----->
  <footer>
-   <a href="show.php">SHOW TABLE</a>
+   <a href="show.php">蔵書一覧</a><br>
    <a href="search.html">蔵書検索</a>
  </footer>
  <!----- フッター END ----->

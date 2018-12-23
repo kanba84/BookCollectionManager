@@ -15,13 +15,12 @@ require_once('makeForm.php');
 $columns = array('title','author','publisher','pubdate','status','name');
 try {
   $sql = new PDO ( "mysql:dbname={$sqlConfig->getDbname()}; host={$sqlConfig->getHost()};port=3306; charset=utf8", $sqlConfig->getUser(), $sqlConfig->getPassword() );
-  #$sql->query($query);
-  #echo "<table>";
+  $booktable=$sqlConfig->getTablename();
   echo "<table><tr>";
   for($i=0;$i<count($columns);$i++){
     echo "<td class='label'>".$columns[$i]."</td>";
   }
-  $query="select * from mybooks join users on mybooks.borrowerid=users.userid";
+  $query="select * from {$booktable} join users on {$booktable}.borrowerid=users.userid";
   echo "</tr>";
   #foreach ($sql->query("select * from {$sqlConfig->getTablename()}") as $row) {
   foreach ($sql->query($query) as $row) {
