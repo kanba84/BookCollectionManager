@@ -3,7 +3,7 @@
 require_once('connectSQL.php');
 try {
   $sql = new PDO ( "mysql:dbname={$sqlConfig->getDbname()}; host={$sqlConfig->getHost()};port=3306; charset=utf8", $sqlConfig->getUser(), $sqlConfig->getPassword() );
-  $query="insert into {$sqlConfig->getTablename()} values ('{$_POST['isbn']}','{$_POST['title']}','{$_POST['volume']}','{$_POST['series']}','{$_POST['author']}','{$_POST['publisher']}','{$_POST['pubdate']}','{$_POST['cover']}')";
+  $query="insert into {$sqlConfig->getTablename()} (isbn,title,volume,series,author,publisher,pubdate,cover) values ('{$_POST['isbn']}','{$_POST['title']}','{$_POST['volume']}','{$_POST['series']}','{$_POST['author']}','{$_POST['publisher']}','{$_POST['pubdate']}','{$_POST['cover']}')";
   #$sql->query()
   #echo $query;
   $sql->query($query);
